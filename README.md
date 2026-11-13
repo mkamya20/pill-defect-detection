@@ -1,6 +1,6 @@
 # Pill defect detection
 
-Visual defect detection on manufactured pills, using the pill category of the [MVTec AD dataset](https://www.mvtec.com/research-teaching/datasets/mvtec-ad).
+We are trying to find defects in photos of manufactured pills, cracks, scratches, stains etc using the pill category of the [MVTec AD dataset](https://www.mvtec.com/research-teaching/datasets/mvtec-ad). Two models, patch and whole-image learn only from pictures of normal pills, then flag a pill as defective when a new photo cannot be rebuilt accurately. One model looks at the whole pill. The other looks at small overlapping patches of the same photo. We then compare which approach is better at spotting the defect and showing where it is. 
 
 ## Research question
 
