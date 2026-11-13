@@ -39,8 +39,6 @@ data/pill/ground_truth/
 
 The planned split of the normal training images is about 214 training images and 53 validation images. Split the original images first. Create patches and any augmented copies only after that split exists. If the on-disk training count is not 267, stop and agree on the split before writing `split.csv`.
 
-Empty folders for this layout are already present, including `train/good/`, `test/good/`, and the seven published defect groups under `test/` and `ground_truth/`. `outputs/checkpoints/` and `outputs/figures/` are empty local destinations for later weights and figures. None of these folders contain images, masks, or model files.
-
 
 ### Plan
 
@@ -80,8 +78,6 @@ python -m ipykernel install --user --name pill-defect --display-name "Python (pi
 3. `notebooks/03_patch_model.ipynb` — patch autoencoder, using the same split. This can proceed alongside notebook 02 once the split exists.
 4. `notebooks/04_evaluation.ipynb` — thresholds, test metrics, and poster figures after both models have saved checkpoints.
 
-Notebooks 02 and 03 must not read test labels or defect masks. Notebook 04 is the evaluation notebook.
-
 ## What stays off GitHub
 
 Dataset images, ground-truth masks, checkpoints, and figures are local. `.gitignore` excludes `data/` and `outputs/`, along with virtual environments and notebook checkpoints. Notebooks, `requirements.txt`, `README.md`, and `split.csv` are the files intended for the repository. `split.csv` stores paths and split labels, not image bytes.
@@ -90,6 +86,6 @@ Dataset images, ground-truth masks, checkpoints, and figures are local. `.gitign
 
 | Member | Responsibilities |
 | --- | --- |
-| MC | Dataset checks, shared split, whole-image model |
-| MK | Patch extraction, patch model, heatmap reconstruction |
-| TS | Shared evaluation, comparison charts, poster figures |
+| MC | Dataset checks, shared split, whole-image model (01_data_setup.ipynb, 02_whole_image.ipynb) |
+| MK | Patch extraction, patch model, heatmap reconstruction (03_patch_model.ipynb) |
+| TS | Shared evaluation, comparison charts, poster figures (04_evalution.ipynb) |
