@@ -88,4 +88,4 @@ Dataset images, ground-truth masks, checkpoints, and figures are local. `.gitign
 | --- | --- |
 | MC | Dataset checks, shared split, whole-image model (01_data_setup.ipynb, 02_whole_image.ipynb) |
 | MK | Patch extraction, patch model, heatmap reconstruction (03_patch_model.ipynb) |
-| TS | Shared evaluation, comparison charts, poster figures (04_evalution.ipynb) |
+| TS | Shared evaluation, comparison charts, poster figures (04_evaluation.ipynb) |
