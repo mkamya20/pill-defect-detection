@@ -9,7 +9,7 @@ Does examining small image patches improve the detection and localization of sub
 The planned comparison has two convolutional autoencoders. Both learn only from normal images. Reconstruction differences will produce anomaly scores and defect heatmaps.
 
 1. Whole RGB images resized to 256 × 256.
-2. Overlapping 128 × 128 patches taken from the original images.
+2. Overlapping 128 × 128 patches taken from those same 256 × 256 images.
 
 The official test set stays separate from training and validation. Test labels and defect masks are reserved for evaluation. Both approaches are planned to use the same scoring procedure and the same metrics.
 
