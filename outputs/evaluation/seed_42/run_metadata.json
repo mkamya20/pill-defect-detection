@@ -1,0 +1,24 @@
+{
+  "training_seed": 42,
+  "torch": "2.7.1+cpu",
+  "torchvision": "0.22.1+cpu",
+  "sklearn": "1.9.0",
+  "python": "3.12.11",
+  "device": "CPU",
+  "processor": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+  "threads": 4,
+  "cnn_weights": "ResNet18_Weights.IMAGENET1K_V1",
+  "bank_build_seconds": 14.344345699999394,
+  "patch_config": {
+    "image_size": 256,
+    "patch_size": 128,
+    "stride": 64,
+    "background_brightness": 0.08,
+    "background_spread": 0.05
+  },
+  "sha256": {
+    "split.csv": "fb993f95df5dc7fcc70f88208aa998dacd086dc32d4636a3f288d511c7419330",
+    "whole_image_autoencoder.pth": "c70407f883e0ffaa2f5e1ddf0a1ef61a21095d9d0e9c36b763298f5729de7681",
+    "patch_autoencoder.pth": "78b7526a4e1aee2d0b363282bf2b2f09c548f1a302a8b51790321ea7c4ee1bca"
+  }
+}
